@@ -53,8 +53,7 @@ public class MyBot extends TelegramLongPollingBot {
                 portfolioAdd.put(chatId, "works");
             } else if ("works".equals(portfolioAdd.get(chatId))) {
                 portfolioAddInfo.put(chatId + "name", message);
-                sendMessage(chatId, "\uD83D\uDCF8 Endi ishingizning 10 tagacha suratini yuklang." +
-                        " Ishingiz tugagach, \"Bajarildi\" tugmasini bosing.");
+                sendMessage(chatId, "\uD83D\uDCF8 Endi ishingizning 10 tagacha suratini yuklang." + " Ishingiz tugagach, \"Bajarildi\" tugmasini bosing.");
                 portfolioAdd.put(chatId, "finish");
             } else if ("finish".equals(portfolioAdd.get(chatId))) {
                 portfolioAddInfo.put(chatId + "name", message);
@@ -69,6 +68,8 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Name : " + name + "\nFamiliya" + familiya);
+
+
 
                 try {
                     execute(sendMessage);
