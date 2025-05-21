@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MyBotService {
 
-    public SendMessage language(Long chatId){
+    public SendMessage language(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Choose Language : ");
@@ -44,7 +44,8 @@ public class MyBotService {
 
         return message;
     }
-    public SendMessage Uzbek(Long chatId){
+
+    public SendMessage Uzbek(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Assalomu aleykum \uD83D\uDC4B GlamPro ga xush kelibsiz - go'zallik olamidagi yordamchingiz!\n" +
@@ -68,7 +69,8 @@ public class MyBotService {
         message.setReplyMarkup(inlineKeyboardMarkup);
         return message;
     }
-    public SendMessage Date(Long chatId){
+
+    public SendMessage Date(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText(
@@ -247,7 +249,8 @@ public class MyBotService {
         message.setReplyMarkup(inlineKeyboardMarkup);
         return message;
     }
-    public SendMessage TipMakeup(Long chatId){
+
+    public SendMessage TipMakeup(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText(" 3\uFE0F⃣ Makiyaj turi  \uD83D\uDC84 :");
@@ -278,626 +281,710 @@ public class MyBotService {
         message.setReplyMarkup(inlineKeyboardMarkup);
         return message;
     }
-      public SendMessage Brontext (Long chatId){
+
+    public SendMessage Brontext(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("\uD83C\uDF1F Ajoyib! Keling, sizning ideal tasviringizni yarataylik ");
         return message;
-      }
-     public SendMessage Time(Long chatId){
+    }
+
+    public SendMessage Time(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText(" 2\uFE0F⃣ Vaqt \uD83D\uDD53 :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("9:00 - 10:30");
-         button.setCallbackData("t_1");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("9:00 - 10:30");
+        button.setCallbackData("t_1");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("11:00 - 12:30");
-         button.setCallbackData("t_2");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("11:00 - 12:30");
+        button.setCallbackData("t_2");
+        row.add(button);
 
-         button = new InlineKeyboardButton();
-         button.setText("13:00 - 14:30");
-         button.setCallbackData("t_3");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("13:00 - 14:30");
+        button.setCallbackData("t_3");
+        row.add(button);
 
-         row = new ArrayList<>();
+        row = new ArrayList<>();
 
-         button = new InlineKeyboardButton();
-         button.setText("15:00 - 16:30");
-         button.setCallbackData("t_4");
-         row.add(button);
-         keyboard.add(row);
+        button = new InlineKeyboardButton();
+        button.setText("15:00 - 16:30");
+        button.setCallbackData("t_4");
+        row.add(button);
+        keyboard.add(row);
 
-         button = new InlineKeyboardButton();
-         button.setText("15:30 - 17:30");
-         button.setCallbackData("t_5");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("15:30 - 17:30");
+        button.setCallbackData("t_5");
+        row.add(button);
 
-         button = new InlineKeyboardButton();
-         button.setText("18:00 - 19:30");
-         button.setCallbackData("t_6");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("18:00 - 19:30");
+        button.setCallbackData("t_6");
+        row.add(button);
 
-         keyboard.add(row);
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage HomeOrSalon(Long chatId){
+        keyboard.add(row);
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendMessage HomeOrSalon(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("\uD83D\uDCCD Birinchi bo'lib, bo'yanishingizni qayerda qilish kerakligini tanlang:");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("Salon \uD83C\uDF80");
-         button.setCallbackData("salon");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("Salon \uD83C\uDF80");
+        button.setCallbackData("salon");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Xonadonda \uD83C\uDFE1");
-         button.setCallbackData("home");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Xonadonda \uD83C\uDFE1");
+        button.setCallbackData("home");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Wedding(Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Wedding(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/df/b0/f6/dfb0f6e170e15317221b658c42c5b4da.jpg"));
         message.setCaption("Kelinchak uchun obraz : Ko'zlarga urg'u berilgan glamur \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("ok");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("ok");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("kelin");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("kelin");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Wed2 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Wed2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/b8/87/2b/b8872bb27f94f7ea2ae5a55f8dc23033.jpg"));
-         message.setCaption("Kelinchak uchun obraz : Klassik ko'rinish \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setCaption("Kelinchak uchun obraz : Klassik ko'rinish \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("ok1");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("ok1");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("kelin1");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("kelin1");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Wed3 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Wed3(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/7f/3a/41/7f3a414bb579e806585f02a4dc207c2d.jpg"));
-         message.setCaption("Kelinchak uchun obraz : Nyud \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setCaption("Kelinchak uchun obraz : Nyud \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("ok2");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("ok2");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("kelin2");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("kelin2");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Wed4 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Wed4(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/7c/1b/c5/7c1bc5fe10c566f4f967c42f9e422cec.jpg"));
-          message.setCaption("Kelinchak uchun obraz : Nozik pushti \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setCaption("Kelinchak uchun obraz : Nozik pushti \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("ok3");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("ok3");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("kelin3");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("kelin3");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage Ok (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendMessage Ok(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Malumot sifatida ushbu uslubni tanlashni xohlaysizmi ✨? ");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("yes");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("yes");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("❌");
-         button.setCallbackData("no");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("❌");
+        button.setCallbackData("no");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Party (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Party(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/1f/39/23/1f39234f7a6f15428fd2149103b9acdc.jpg"));
         message.setCaption("Kechki ba'zim uchun obraz : Glamur uslub \uD83D\uDC83\uD83C\uDFFC :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("party_ok");
-         row.add(button);
-         keyboard.add(row);
-
-
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("partyOne");
-         row.add(button);
-
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-             public SendPhoto Party1 (Long chatId){
-             SendPhoto message = new SendPhoto();
-             message.setChatId(chatId);
-             message.setPhoto(new InputFile("https://i.pinimg.com/736x/aa/93/96/aa9396072851d81caad71702232c89eb.jpg"));
-             message.setCaption("Kechki ba'zim uchun obraz : Nozik pushti \uD83D\uDC83\uD83C\uDFFC :");
-
-             InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-             List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-             List<InlineKeyboardButton> row = new ArrayList<>();
-             InlineKeyboardButton button = new InlineKeyboardButton();
-
-             button.setText("✅");
-             button.setCallbackData("party_ok1");
-             row.add(button);
-             keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("party_ok");
+        row.add(button);
+        keyboard.add(row);
 
 
-             button = new InlineKeyboardButton();
-             button.setText("Keyingi obraz \uD83C\uDF80 :");
-             button.setCallbackData("party1");
-             row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("partyOne");
+        row.add(button);
 
-             inlineKeyboardMarkup.setKeyboard(keyboard);
-             message.setReplyMarkup(inlineKeyboardMarkup);
-             return message;
-     }
-     public SendPhoto Party2 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Party1(Long chatId) {
+        SendPhoto message = new SendPhoto();
+        message.setChatId(chatId);
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/aa/93/96/aa9396072851d81caad71702232c89eb.jpg"));
+        message.setCaption("Kechki ba'zim uchun obraz : Nozik pushti \uD83D\uDC83\uD83C\uDFFC :");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("✅");
+        button.setCallbackData("party_ok1");
+        row.add(button);
+        keyboard.add(row);
+
+
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("party1");
+        row.add(button);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Party2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/db/b1/90/dbb1903c1403cdd9f9b01e5311b48e31.jpg"));
         message.setCaption("Kechki ba'zim uchun obraz : Klassik uslub \uD83D\uDC83\uD83C\uDFFC :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("party_ok2");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("party_ok2");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("party2");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("party2");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Party3 (Long chatId){
-        SendPhoto message= new SendPhoto();
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Party3(Long chatId) {
+        SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/61/ff/73/61ff73108704fc411f4d08b005d98d1f.jpg"));
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
-         message.setCaption("Kechki ba'zim uchun obraz : Nyud \uD83D\uDC83\uD83C\uDFFC :");
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        message.setCaption("Kechki ba'zim uchun obraz : Nyud \uD83D\uDC83\uD83C\uDFFC :");
 
-         button.setText("✅");
-         button.setCallbackData("party_ok3");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("party_ok3");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("party3");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("party3");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Party4 (Long chatId){
-        SendPhoto message= new SendPhoto();
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Party4(Long chatId) {
+        SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/62/a0/7c/62a07c06b4a56ebadf5a9d75d9079480.jpg"));
 
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
-         message.setCaption("Kechki ba'zim uchun obraz : Ko'zlarga urg'u \uD83D\uDC83\uD83C\uDFFC :");
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        message.setCaption("Kechki ba'zim uchun obraz : Ko'zlarga urg'u \uD83D\uDC83\uD83C\uDFFC :");
 
-         button.setText("✅");
-         button.setCallbackData("party_ok4");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("party_ok4");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("party4");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("party4");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage Ok1 (Long chatId){
-        SendMessage message= new SendMessage();
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendMessage Ok1(Long chatId) {
+        SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Malumot sifatida ushbu uslubni tanlashni xohlaysizmi ✨? ");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("yes1");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("yes1");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("❌");
-         button.setCallbackData("no1");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("❌");
+        button.setCallbackData("no1");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Photo (Long chatId){
-        SendPhoto message= new SendPhoto();
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Photo(Long chatId) {
+        SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/cc/79/93/cc79931399352816d2baaa146562520e.jpg"));
         message.setCaption("Fotosessiya uchun obraz : Mo'viy ko'zlar uslubi \uD83D\uDCF8");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("photo_ok");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("photo_ok");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("photo1");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("photo1");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Photo1 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Photo1(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/e4/24/28/e4242837833933dd8942699e8ae65739.jpg"));
-         message.setCaption("Fotosessiya uchun obraz : Nozik pushti uslubi \uD83D\uDCF8");
+        message.setCaption("Fotosessiya uchun obraz : Nozik pushti uslubi \uD83D\uDCF8");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("photo_ok1");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("photo_ok1");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("photo2");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("photo2");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Photo2 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Photo2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/f0/90/3c/f0903c6aef9580ab67b74e6989f2a3bc.jpg"));
-         message.setCaption("Fotosessiya uchun obraz : Glamur \uD83D\uDCF8");
+        message.setCaption("Fotosessiya uchun obraz : Glamur \uD83D\uDCF8");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("photo_ok2");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("photo_ok2");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("photo3");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("photo3");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendPhoto Photo3 (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendPhoto Photo3(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
         message.setPhoto(new InputFile("https://i.pinimg.com/736x/b6/60/95/b66095d8db0cea5f313ec673a6850819.jpg"));
-         message.setCaption("Fotosessiya uchun obraz : Slavik uslubi \uD83D\uDCF8");
+        message.setCaption("Fotosessiya uchun obraz : Slavik uslubi \uD83D\uDCF8");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("photo_ok3");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("photo_ok3");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi obraz \uD83C\uDF80 :");
-         button.setCallbackData("photo4");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi obraz \uD83C\uDF80 :");
+        button.setCallbackData("photo4");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage Ok3 (Long chatId){
-        SendMessage message= new SendMessage();
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendMessage Ok3(Long chatId) {
+        SendMessage message = new SendMessage();
         message.setChatId(chatId);
-         message.setText("Malumot sifatida ushbu uslubni tanlashni xohlaysizmi ✨? ");
+        message.setText("Malumot sifatida ushbu uslubni tanlashni xohlaysizmi ✨? ");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("yes2");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("yes2");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("❌");
-         button.setCallbackData("no2");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("❌");
+        button.setCallbackData("no2");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
 
-     }
-     public SendMessage Visagist (Long chatId){
-        SendMessage message= new SendMessage();
+    }
+
+    public SendMessage Visagist(Long chatId) {
+        SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Keling sizga mo's bo'lgan Mutahasislarni ko'rib chiqamiz ✨:\n" +
                 "\n" +
-                "Ism \uD83C\uDF80: Марина\n" +
-                "Familiya ✨: Хамидова \n" +
-                "Ish tajribasi \uD83D\uDCC8: 10 лет \n" +
-                "Manzil \uD83D\uDCCD: Ц1 \n" +
-                "Telefon raqam ☎\uFE0F: +998 7657345 \n" +
+                "\uD83C\uDF80 Ism : Марина\n" +
+                "✨Familiya : Хамидова \n" +
+                "\uD83D\uDCC8 Ish tajribasi : 10 лет \n" +
+                "\uD83D\uDCCDManzil: Ц1 \n" +
+                "☎\uFE0F Telefon raqam : +998 7657345 \n" +
                 "\n " +
                 " 'Марина' ning shu sohadagi ijodlari \uD83D\uDC47\uD83C\uDFFB :");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("Mening ijodlarim \uD83C\uDF80:");
-         button.setCallbackData("works1");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("Mening ijodlarim \uD83C\uDF80:");
+        button.setCallbackData("works1");
+        row.add(button);
+        keyboard.add(row);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendVideo Works(Long chatId){
-       SendVideo video = new SendVideo();
-       video.setChatId(chatId);
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
 
-       video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\3.mp4")));
-       video.setCaption("Work 1 \uD83D\uDC84:");
-       return video;
-     }
-     public SendVideo Work1(Long chatId){
+    public SendVideo Works(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\3.mp4")));
+        video.setCaption("Work 1 \uD83D\uDC84:");
+        return video;
+    }
+
+    public SendVideo Work1(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
         video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\2.mp4")));
         video.setCaption("Work 2 \uD83D\uDC84:");
 
         return video;
-     }
-     public SendVideo Work2(Long chatId){
+    }
+
+    public SendVideo Work2(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
         video.setVideo(new InputFile("https://v1.pinimg.com/videos/mc/720p/f2/61/54/f26154b4669a81f04b4bd1d8204079a9.mp4"));
         video.setCaption("Work 3 \uD83D\uDC84:");
 
         return video;
-     }
-     public SendVideo Work3(Long chatId){
+    }
+
+    public SendVideo Work3(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
         video.setVideo(new InputFile("https://v1.pinimg.com/videos/mc/expMp4/06/02/b7/0602b7cece401a1d88f9818dbee4bfe0_t1.mp4"));
         video.setCaption("Work 4 \uD83D\uDC84:");
 
         return video;
-     }
-     public SendVideo Work4(Long chatId){
+    }
+
+    public SendVideo Work4(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
         video.setVideo(new InputFile("https://v1.pinimg.com/videos/mc/expMp4/b1/71/2a/b1712a9602ddda6d83d5af39bfd3208f_t1.mp4"));
         video.setCaption("Work 5 \uD83D\uDC84:");
 
         return video;
-     }
-     public SendVideo Work5(Long chatId){
-        SendVideo video = new SendVideo();
-        video.setChatId(chatId);
-        video.setVideo(new InputFile("https://v1.pinimg.com/videos/mc/expMp4/b1/71/2a/b1712a9602ddda6d83d5af39bfd3208f_t1.mp4"));
-        video.setCaption("Work 6 \uD83D\uDC84:");
+    }
 
-        return video;
-     }
-     public SendMessage VisagistText (Long chatId){
+    public SendMessage VisagistText(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Pardoz artistimizning ijodlari sizga ma'qul keldimi ✨?");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("✅");
-         button.setCallbackData("ha");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("✅");
+        button.setCallbackData("ha");
+        row.add(button);
+        keyboard.add(row);
 
 
-         button = new InlineKeyboardButton();
-         button.setText("Keyingi Artist \uD83C\uDF80:");
-         button.setCallbackData("portfolio");
-         row.add(button);
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi Artist \uD83C\uDF80:");
+        button.setCallbackData("portfolio");
+        row.add(button);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage Save (Long chatId){
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+
+    public SendMessage Save(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
         message.setText("Ajoyib! Ma'lumotlaringiz muvaffaqiyatli saqlandi ✅ ");
 
-         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-         List<InlineKeyboardButton> row = new ArrayList<>();
-         InlineKeyboardButton button = new InlineKeyboardButton();
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
 
-         button.setText("Visagist bilan bog'lanish \uD83D\uDCF2 ");
-         button.setCallbackData("call");
-         row.add(button);
-         keyboard.add(row);
+        button.setText("Visagist bilan bog'lanish \uD83D\uDCF2 ");
+        button.setCallbackData("call");
+        row.add(button);
+        keyboard.add(row);
 
-         inlineKeyboardMarkup.setKeyboard(keyboard);
-         message.setReplyMarkup(inlineKeyboardMarkup);
-         return message;
-     }
-     public SendMessage Visagist1 (Long chatId){
-         SendMessage sendMessage = new SendMessage();
-         sendMessage.setChatId(chatId);
-         sendMessage.setText("flermrflme");
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
 
-         return  sendMessage;
-     }
+    public SendMessage Visagist1(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("\uD83C\uDF80 Ism: Fazilat \n" +
+                "✨ Familiya:Muminova \n " +
+                "\uD83D\uDCC8 Ish faoliyati : 2 yil \n" +
+                "\uD83D\uDCCD Manzil: Tashkent City \n" +
+                "☎\uFE0F Telefon raqam : +998 78637526 \n " +
+                "\n " +
+                "'Fazilat' ning shu sohadagi ijodlari \uD83D\uDC47\uD83C\uDFFB");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("Mening ijodlarim \uD83C\uDF80:");
+        button.setCallbackData("visagist1");
+        row.add(button);
+        keyboard.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    public SendVideo Work5(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(""));
+        video.setCaption("Work 1 \uD83D\uDC84:");
+
+        return video;
+    }
+
+    public SendVideo Work6(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(""));
+        video.setCaption("Work 2 \uD83D\uDC84:");
+
+        return video;
+    }
+
+    public SendVideo Work7(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(""));
+        video.setCaption("Work 3 \uD83D\uDC84:");
+
+        return video;
+    }
+
+    public SendVideo Work8(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(""));
+        video.setCaption("Work 4 \uD83D\uDC84:");
+
+        return video;
+    }
+
+    public SendVideo Work9(Long chatId) {
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(""));
+        video.setCaption("Work 5 \uD83D\uDC84:");
+
+        return video;
+    }
+
 
 }

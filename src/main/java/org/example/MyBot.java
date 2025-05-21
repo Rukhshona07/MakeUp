@@ -636,13 +636,6 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-                if (data.equals("next")) {
-                    try {
-                        execute(myBotService.Menu(chatId));
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
 
             }
             if (data.equals("portfolio")) {
@@ -652,7 +645,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
         }
 
     }
