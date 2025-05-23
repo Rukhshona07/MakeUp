@@ -9,6 +9,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.awt.Color.yellow;
 import static java.awt.SystemColor.text;
 
 public class MyBot extends TelegramLongPollingBot {
@@ -642,6 +643,195 @@ public class MyBot extends TelegramLongPollingBot {
             if (data.equals("portfolio")) {
                 try {
                     execute(myBotService.Visagist1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.Work5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.Work6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.Work7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.Work9(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.Work8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist1")){
+                try {
+                    execute(myBotService.VisagistText1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("portfolio1")){
+                try {
+                    execute(myBotService.Visagist2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.Work10(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.Work11(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.Work12(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.Work13(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.Work14(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist2")){
+                try {
+                    execute(myBotService.VisagistText2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("portfolio2")){
+                try {
+                    execute(myBotService.Visagist3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.Work15(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.Work16(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.Work17(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.Work18(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.Work19(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist3")){
+                try {
+                    execute(myBotService.VisagistText3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.Work20(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.Work21(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.Work22(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.Work23(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.Work24(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("portfolio3")){
+                try {
+                    execute(myBotService.Visagist4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(data.equals("visagist4")){
+                try {
+                    execute(myBotService.VisagistText4(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

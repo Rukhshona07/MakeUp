@@ -368,8 +368,8 @@ public class MyBotService {
     public SendPhoto Wedding(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/df/b0/f6/dfb0f6e170e15317221b658c42c5b4da.jpg"));
-        message.setCaption("Kelinchak uchun obraz : Ko'zlarga urg'u berilgan glamur \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/b8/87/2b/b8872bb27f94f7ea2ae5a55f8dc23033.jpg"));
+        message.setCaption("Kelinchak uchun obraz : Klassik ko'rinish \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
@@ -395,8 +395,9 @@ public class MyBotService {
     public SendPhoto Wed2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/b8/87/2b/b8872bb27f94f7ea2ae5a55f8dc23033.jpg"));
-        message.setCaption("Kelinchak uchun obraz : Klassik ko'rinish \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/df/b0/f6/dfb0f6e170e15317221b658c42c5b4da.jpg"));
+        message.setCaption("Kelinchak uchun obraz : Ko'zlarga urg'u berilgan glamur \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
@@ -449,8 +450,8 @@ public class MyBotService {
     public SendPhoto Wed4(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/7c/1b/c5/7c1bc5fe10c566f4f967c42f9e422cec.jpg"));
-        message.setCaption("Kelinchak uchun obraz : Nozik pushti \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/05/24/41/052441b7f9b837d301cb01a2f07f9923.jpg"));
+        message.setCaption("Kelinchak uchun obraz : Klassik \uD83D\uDC70\uD83C\uDFFC\u200D♀\uFE0F :");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
@@ -461,12 +462,6 @@ public class MyBotService {
         button.setCallbackData("ok3");
         row.add(button);
         keyboard.add(row);
-
-
-        button = new InlineKeyboardButton();
-        button.setText("Keyingi obraz \uD83C\uDF80 :");
-        button.setCallbackData("kelin3");
-        row.add(button);
 
         inlineKeyboardMarkup.setKeyboard(keyboard);
         message.setReplyMarkup(inlineKeyboardMarkup);
@@ -556,7 +551,7 @@ public class MyBotService {
     public SendPhoto Party2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/db/b1/90/dbb1903c1403cdd9f9b01e5311b48e31.jpg"));
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/ce/fb/30/cefb30e61121d64a7a4c6499103ba5b9.jpg"));
         message.setCaption("Kechki ba'zim uchun obraz : Klassik uslub \uD83D\uDC83\uD83C\uDFFC :");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
@@ -610,7 +605,7 @@ public class MyBotService {
     public SendPhoto Party4(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/62/a0/7c/62a07c06b4a56ebadf5a9d75d9079480.jpg"));
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/d4/36/88/d43688c22a1af3625db654361209462f.jpg"));
 
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
@@ -623,12 +618,6 @@ public class MyBotService {
         button.setCallbackData("party_ok4");
         row.add(button);
         keyboard.add(row);
-
-
-        button = new InlineKeyboardButton();
-        button.setText("Keyingi obraz \uD83C\uDF80 :");
-        button.setCallbackData("party4");
-        row.add(button);
 
         inlineKeyboardMarkup.setKeyboard(keyboard);
         message.setReplyMarkup(inlineKeyboardMarkup);
@@ -718,7 +707,7 @@ public class MyBotService {
     public SendPhoto Photo2(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/f0/90/3c/f0903c6aef9580ab67b74e6989f2a3bc.jpg"));
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/11/c3/aa/11c3aacc833d7448dc82c20cf451292b.jpg"));
         message.setCaption("Fotosessiya uchun obraz : Glamur \uD83D\uDCF8");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
@@ -745,7 +734,7 @@ public class MyBotService {
     public SendPhoto Photo3(Long chatId) {
         SendPhoto message = new SendPhoto();
         message.setChatId(chatId);
-        message.setPhoto(new InputFile("https://i.pinimg.com/736x/b6/60/95/b66095d8db0cea5f313ec673a6850819.jpg"));
+        message.setPhoto(new InputFile("https://i.pinimg.com/736x/56/f4/14/56f414277cdd6f2cdbb5588438aaba69.jpg"));
         message.setCaption("Fotosessiya uchun obraz : Slavik uslubi \uD83D\uDCF8");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
@@ -757,12 +746,6 @@ public class MyBotService {
         button.setCallbackData("photo_ok3");
         row.add(button);
         keyboard.add(row);
-
-
-        button = new InlineKeyboardButton();
-        button.setText("Keyingi obraz \uD83C\uDF80 :");
-        button.setCallbackData("photo4");
-        row.add(button);
 
         inlineKeyboardMarkup.setKeyboard(keyboard);
         message.setReplyMarkup(inlineKeyboardMarkup);
@@ -944,7 +927,7 @@ public class MyBotService {
     public SendVideo Work5(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
-        video.setVideo(new InputFile(""));
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video1.mp4")));
         video.setCaption("Work 1 \uD83D\uDC84:");
 
         return video;
@@ -953,7 +936,7 @@ public class MyBotService {
     public SendVideo Work6(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
-        video.setVideo(new InputFile(""));
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video2.mp4")));
         video.setCaption("Work 2 \uD83D\uDC84:");
 
         return video;
@@ -962,7 +945,7 @@ public class MyBotService {
     public SendVideo Work7(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
-        video.setVideo(new InputFile(""));
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video3.mp4")));
         video.setCaption("Work 3 \uD83D\uDC84:");
 
         return video;
@@ -971,8 +954,8 @@ public class MyBotService {
     public SendVideo Work8(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
-        video.setVideo(new InputFile(""));
-        video.setCaption("Work 4 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video4.mp4")));
+        video.setCaption("Work 5 \uD83D\uDC84:");
 
         return video;
     }
@@ -980,11 +963,307 @@ public class MyBotService {
     public SendVideo Work9(Long chatId) {
         SendVideo video = new SendVideo();
         video.setChatId(chatId);
-        video.setVideo(new InputFile(""));
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video5.mp4")));
+        video.setCaption("Work 4 \uD83D\uDC84:");
+
+        return video;
+    }
+    public SendMessage VisagistText1 (Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("Pardoz artistimizning ijodlari sizga ma'qul keldimi ✨?");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("✅");
+        button.setCallbackData("ha");
+        row.add(button);
+        keyboard.add(row);
+
+
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi Artist \uD83C\uDF80:");
+        button.setCallbackData("portfolio1");
+        row.add(button);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+    public SendMessage Visagist2(Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("\uD83C\uDF80 Ism: Mumtozabegim \n" +
+                "✨ Familiya:Shuhratova \n " +
+                "\uD83D\uDCC8 Ish faoliyati : 4 yil \n" +
+                "\uD83D\uDCCD Manzil: Seoul street \n" +
+                "☎\uFE0F Telefon raqam : +998 08475829 \n " +
+                "\n " +
+                "'Mumtozabegim' ning shu sohadagi ijodlari \uD83D\uDC47\uD83C\uDFFB");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("Mening ijodlarim \uD83C\uDF80:");
+        button.setCallbackData("visagist2");
+        row.add(button);
+        keyboard.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+    public SendVideo Work10(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video6.mp4")));
+        video.setCaption("Work 1 \uD83D\uDC84:");
+
+        return video;
+    }
+    public SendVideo Work11(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video8.mp4")));
+        video.setCaption("Work 2 \uD83D\uDC84:");
+
+        return video;
+    }
+    public SendVideo Work12(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video7.mp4")));
+        video.setCaption("Work 3 \uD83D\uDC84:");
+
+        return video;
+    }
+    public SendVideo Work13(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video9.mp4")));
+        video.setCaption("Work 4 \uD83D\uDC84:");
+
+        return video;
+    }
+    public SendVideo Work14(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video10.mp4")));
         video.setCaption("Work 5 \uD83D\uDC84:");
 
         return video;
     }
+    public SendMessage VisagistText2(Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("Pardoz artistimizning ijodlari sizga ma'qul keldimi ✨?");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("✅");
+        button.setCallbackData("ha");
+        row.add(button);
+        keyboard.add(row);
 
 
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi Artist \uD83C\uDF80:");
+        button.setCallbackData("portfolio2");
+        row.add(button);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+    public SendMessage Visagist3(Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("\uD83C\uDF80 Ism: Shahzoda \n" +
+                "✨ Familiya:Davlatova \n " +
+                "\uD83D\uDCC8 Ish faoliyati : 3 yil \n" +
+                "\uD83D\uDCCD Manzil: Magic City \n" +
+                "☎\uFE0F Telefon raqam : +998 6756853 \n " +
+                "\n " +
+                "'Shahzoda' ning shu sohadagi ijodlari \uD83D\uDC47\uD83C\uDFFB");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("Mening ijodlarim \uD83C\uDF80:");
+        button.setCallbackData("visagist3");
+        row.add(button);
+        keyboard.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+        return message;
+    }
+    public SendVideo Work15 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 1 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video11.mp4")));
+
+        return video;
+    }
+    public SendVideo Work16(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 2 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video12.mp4")));
+
+        return video;
+    }
+    public SendVideo Work17(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 3 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video13.mp4")));
+
+        return video;
+    }
+    public SendVideo Work18(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 4 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video14.mp4")));
+
+        return video;
+    }
+    public SendVideo Work19(Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 5 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video15.mp4")));
+
+        return video;
+    }
+    public SendMessage VisagistText3 (Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("Pardoz artistimizning ijodlari sizga ma'qul keldimi ✨?");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("✅");
+        button.setCallbackData("ha");
+        row.add(button);
+        keyboard.add(row);
+
+
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi Artist \uD83C\uDF80:");
+        button.setCallbackData("portfolio3");
+        row.add(button);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+
+        return message;
+    }
+    public SendMessage Visagist4 (Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("\uD83C\uDF80 Ism: Алексия \n" +
+                "✨ Familiya: Алексеева \n " +
+                "\uD83D\uDCC8 Ish faoliyati : 6 лет \n" +
+                "\uD83D\uDCCD Manzil: Максим Горький \n" +
+                "☎\uFE0F Telefon raqam : +998 8572386 \n " +
+                "\n " +
+                "'Алексия' ning shu sohadagi ijodlari \uD83D\uDC47\uD83C\uDFFB");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("Mening ijodlarim \uD83C\uDF80:");
+        button.setCallbackData("visagist4");
+        row.add(button);
+        keyboard.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+
+        return message;
+    }
+    public SendVideo Work20 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 1 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video17.mp4")));
+
+        return video;
+    }
+    public SendVideo Work21 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 2 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video18.mp4")));
+
+        return video;
+    }
+    public SendVideo Work22 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 3 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video19.mp4")));
+
+        return video;
+    }
+    public SendVideo Work23 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 4 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video16.mp4")));
+
+        return video;
+    }
+    public SendVideo Work24 (Long chatId){
+        SendVideo video = new SendVideo();
+        video.setChatId(chatId);
+        video.setCaption("Work 5 \uD83D\uDC84:");
+        video.setVideo(new InputFile(new File("C:\\Users\\IMPART\\Desktop\\video\\video20.mp4")));
+
+        return video;
+    }
+    public SendMessage VisagistText4 (Long chatId){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("Pardoz artistimizning ijodlari sizga ma'qul keldimi ✨?");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+
+        button.setText("✅");
+        button.setCallbackData("ha");
+        row.add(button);
+        keyboard.add(row);
+
+
+        button = new InlineKeyboardButton();
+        button.setText("Keyingi Artist \uD83C\uDF80:");
+        button.setCallbackData("portfolio4");
+        row.add(button);
+
+        inlineKeyboardMarkup.setKeyboard(keyboard);
+        message.setReplyMarkup(inlineKeyboardMarkup);
+
+        return message;
+    }
 }
